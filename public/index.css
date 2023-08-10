@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* https://colorswall.com/palette/22488 */
+
+body{
+  @apply bg-bg text-fg
+}
+
+li{
+  @apply hover:bg-op2
+} 
+
+
