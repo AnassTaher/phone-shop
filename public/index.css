@@ -12,4 +12,13 @@ li{
   @apply hover:bg-op2
 } 
 
+/* phone image class apply tailwind css */
+.phone-image{
+  @apply w-64 aspect-square
+}
+
+.phone{
+  @apply flex flex-col items-center justify-center
+}
+
 

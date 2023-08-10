@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/index.css"/>
-    <script src="/app.js" defer></script>
+    <script type="module" src="/app.js" defer></script>
     <script type="module" src="/firebase.js" defer></script>
     <title>Phone Webshop</title>
   </head>
@@ -26,8 +26,9 @@
           <p class="text-center">Some Text</p>
         </div>
       </section>
-      <article>
+      <article class="mt-4">
         <h1 class="text-center">Top Phones</h1>
+        <section id="top-phones" class="grid grid-flow-col"></section>
       </article>
     </main>
   </body>
