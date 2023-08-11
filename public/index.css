@@ -4,21 +4,25 @@
 
 /* https://colorswall.com/palette/22488 */
 
-body{
-  @apply bg-bg text-fg
-}
-
 li{
-  @apply hover:bg-op2
+  @apply hover:bg-hover
 } 
 
-/* phone image class apply tailwind css */
+input{
+  @apply text-body
+}
+
 .phone-image{
-  @apply w-64 aspect-square
+  @apply w-48 
 }
 
 .phone{
-  @apply flex flex-col items-center justify-center
+  @apply flex flex-col items-center justify-center  
 }
+
+.buy-btn{
+  @apply bg-op3 text-white px-4 py-2 rounded-full m-4 hover:bg-hover
+}
+
 
 

@@ -3,32 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/index.css"/>
+    <link rel="stylesheet" href="/index.css" />
     <script type="module" src="/app.js" defer></script>
     <script type="module" src="/firebase.js" defer></script>
     <title>Phone Webshop</title>
   </head>
-  <body>
-    <header class="text-2xl bg-compl p-4">
+  <body class="bg-body text-txt">
+    <header class="text-2xl bg-nav p-4">
       <nav>
-        <ul class="mr-4 flex justify-center gap-4">
+        <ul class="flex justify-center gap-4">
           <li><a href="/index.html">Home</a></li>
-          <li><a href="/phones.html">Phones</a></li>
           <li><a href="/admin.html">Admin</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section class="flex justify-center">
-        <div class="w-1/2">
-          <h1 class="text-4xl text-center">Welcome to the Phone Webshop</h1>
-          <p class="text-center">Some Text</p>
-        </div>
-      </section>
-      <article class="mt-4">
-        <h1 class="text-center">Top Phones</h1>
+      <h1 class="text-4xl text-center mt-4">Welcome to the Phone Webshop</h1>
+
+      <article class="my-8 bg-content">
+        <h1 class="text-center text-3xl">Top Phones</h1>
         <section id="top-phones" class="grid grid-flow-col"></section>
+      </article>
+
+      <article class="bg-content my-8 p-4" >
+        <h1 class="text-center text-2xl">Search Phone</h1>
+        <div class="flex justify-evenly">
+        <section id="search-phones">
+          <form id="search-form" class="flex flex-col gap-4 w-1/4 items-center">
+            <div class="w-12">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" />
+            </div>
+
+            <div class="w-12">
+              <label for="price">Price</label>
+              <input type="number" id="price" name="price" />
+            </div>
+
+            <div class="w-12">
+              <label for="company">Company</label>
+              <input id="company" name="company" />
+            </div>
+
+            <button
+              id="search-button"
+              class="hover:bg-hover text-white font-bold rounded p-4 "
+            >
+              Search
+            </button>
+          </form>
+        </section>
+        <section id="search-result">
+          
+        </section>
+      </div>
       </article>
     </main>
   </body>

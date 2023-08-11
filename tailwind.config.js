@@ -4,12 +4,13 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
-      bg : "#d2c1b0",
-      fg : "#37251b",
-      compl : "#8f755f",
-      op1 : "#ad6d2f",
-      op2 : "#e4bc84",
+      hover : "#e4bc84",
       op3 : "#80411e",
+      body : "#181a1b",
+      nav : "#37251b",
+      content : "#503f2e",
+      white : "#ffffff",
+      txt : "#ece0d1"
     }
   },
   plugins: [],

@@ -7,19 +7,20 @@
     <link rel="stylesheet" href="/index.css" />
     <script type="module" src="admin.js" defer></script>
   </head>
-  <body>
-    <header class="text-2xl bg-compl p-4">
+  <body class="bg-body text-txt">
+    <header class="text-2xl bg-nav p-4">
       <nav>
         <ul class="mr-4 flex justify-center gap-4">
           <li><a href="/index.html">Home</a></li>
-          <li><a href="/phones.html">Phones</a></li>
           <li><a href="/admin.html">Admin</a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
-      <form id="post-form" class="grid gap-4">
+    <main class="bg-content mt-12 p-12">
+      <h1 class="pb-4 text-2xl">Add phone</h1>
+      <h2>Required to fill in all inputs</h2>
+      <form id="post-form" class="grid gap-4 ">
         <div>
         <label for="name">Name</label>
         <input type="text" id="name" name="name" />
@@ -37,10 +38,16 @@
         <label for="company">Company</label>
         <input id="company" name="company"></input>
       </div>
+
+      <div>
+        <label for="url">Url</label>
+        <input type="url" id="url" name="url" />
+      </div>
+
       <div>
         <button
         id="admin-post"
-        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        class="bg-blue-500 hover:bg-hover p-4 text-white font-bold rounded"
       >
         Submit
       </button>
