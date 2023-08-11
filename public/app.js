@@ -25,17 +25,14 @@ function createPhone(phone) {
   return el
 }
 
-;(async function renderTopPhones() {
+(async function renderTopPhones() {
   const querySnapshot = await getDocs(collection(db, "phones"))
 
-  // get 3 random phones from the database
   const phones = []
   querySnapshot.forEach((doc) => {
     phones.push(doc.data())
   })
-  // const randomPhones = phones.sort(() => Math.random() - Math.random()).slice(0, 3);
-  // get the first 3 phones
-  const randomPhones = phones.slice(0, 3)
+  const randomPhones = phones.sort(() => Math.random() - Math.random()).slice(0, 3);
   for (let phone of randomPhones) {
     const phoneElement = createPhone(phone)
     topPhones.appendChild(phoneElement)
