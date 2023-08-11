@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/tailwind.css" />
     <script type="module" src="/app.js" defer></script>
     <script type="module" src="/firebase.js" defer></script>
     <title>Phone Webshop</title>
@@ -19,7 +20,7 @@
     </header>
 
     <main>
-      <h1 class="text-4xl text-center mt-4">Welcome to the Phone Webshop</h1>
+      <h1 class="text-4xl text-center mt-4">View your favorite phones</h1>
 
       <article class="my-8 bg-content">
         <h1 class="text-center text-3xl">Top Phones</h1>
@@ -28,6 +29,7 @@
 
       <article class="bg-content my-8 p-4" >
         <h1 class="text-center text-2xl">Search Phone</h1>
+        <h2 class="text-center text-sm">You can search by any amount of inputs </h2>
         <div class="flex justify-evenly">
         <section id="search-phones">
           <form id="search-form" class="flex flex-col gap-4 w-1/4 items-center">
@@ -55,7 +57,7 @@
           </form>
         </section>
         <section id="search-result">
-          
+
         </section>
       </div>
       </article>
