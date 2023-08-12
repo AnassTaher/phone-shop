@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "dev": "cross-env TAILWIND_MODE=watch vite"
+    "dev": "cross-env TAILWIND_MODE=watch vite",
+    "css" : "tailwindcss -i ./public/index.css -o ./public/tailwind.css"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",

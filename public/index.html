@@ -4,35 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/index.css" />
-    <link rel="stylesheet" href="/tailwind.css" />
+    <!-- <link rel="stylesheet" href="/tailwind.css" /> -->
     <script type="module" src="/app.js" defer></script>
     <script type="module" src="/firebase.js" defer></script>
     <title>Phone Webshop</title>
   </head>
-  <body class="bg-body text-txt">
+  <body>
     <header class="text-2xl bg-nav p-4">
       <nav>
         <ul class="flex justify-center gap-4">
           <li><a href="/index.html">Home</a></li>
-          <li><a href="/admin.html">Admin</a></li>
+          <li><a href="/phones.html">Phones</a></li>
+          <li><a href="/admin/admin.html">Admin</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <h1 class="text-4xl text-center mt-4">View your favorite phones</h1>
+      <h1>View your favorite phones</h1>
 
-      <article class="my-8 bg-content">
-        <h1 class="text-center text-3xl">Top Phones</h1>
+      <article>
+        <h2>Top Phones</h2>
         <section id="top-phones" class="grid grid-flow-col"></section>
       </article>
 
-      <article class="bg-content my-8 p-4" >
-        <h1 class="text-center text-2xl">Search Phone</h1>
-        <h2 class="text-center text-sm">You can search by any amount of inputs </h2>
+      <article>
+        <h2>Search Phone</h2>
+        <h3>You can search by any amount of inputs </h>
         <div class="flex justify-evenly">
-        <section id="search-phones">
-          <form id="search-form" class="flex flex-col gap-4 w-1/4 items-center">
+          <form id="search-form">
             <div class="w-12">
               <label for="name">Name</label>
               <input type="text" id="name" name="name" />
@@ -48,14 +48,8 @@
               <input id="company" name="company" />
             </div>
 
-            <button
-              id="search-button"
-              class="hover:bg-hover text-white font-bold rounded p-4 "
-            >
-              Search
-            </button>
+            <button>Search</button>
           </form>
-        </section>
         <section id="search-result">
 
         </section>

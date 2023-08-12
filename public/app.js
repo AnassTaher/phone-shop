@@ -20,7 +20,7 @@ function createPhone(phone) {
     <p>
       ${phone.company}
     </p>
-    <a href="${phone.url}" class="buy-btn">Buy: ${phone.price}</a>
+    <a href="${phone.url}"><button>Buy: ${phone.price}</button></a>
   `
   return el
 }

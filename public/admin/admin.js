@@ -1,5 +1,5 @@
 
-import { app, db } from './firebase.js';
+import { app, db } from '../firebase.js';
 import { collection, addDoc } from 'https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore.js'
 
 const postForm = document.getElementById('post-form');
