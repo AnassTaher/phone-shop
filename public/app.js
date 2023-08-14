@@ -5,6 +5,7 @@ import {
 import { db } from "./firebase.js"
 
 const topPhones = document.getElementById("top-phones")
+const searchForm = document.getElementById("search-form")
 
 function createPhone(phone) {
   const el = document.createElement("div")
@@ -39,7 +40,7 @@ function createPhone(phone) {
   }
 })()
 
-const searchForm = document.getElementById("search-form")
+
 
 searchForm.addEventListener("submit", async (e) => {
   e.preventDefault()

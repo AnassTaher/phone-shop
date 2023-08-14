@@ -40,6 +40,9 @@ h1,h2,h3{
   @apply text-center mt-4 
 }
 
+.add-phone{
+    @apply flex justify-center items-center
+}
 
 .phone-image{
   @apply w-48 

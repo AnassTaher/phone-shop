@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/index.css" />
+    <!-- <link rel="stylesheet" href="/tailwind.css" /> -->
+    <!-- <script type="module" src="/firebase.js" defer></script> -->
+    <script type="module" src="/phones/phones.js" defer></script>
+    <title>Phone Webshop</title>
+  </head>
+  <body>
+    <header class="text-2xl bg-nav p-4">
+      <nav>
+        <ul class="flex justify-center gap-4">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/phones/phones.html">Phones</a></li>
+          <li><a href="/admin/admin.html">Admin</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>View all phones</h1>
+      <article id="all-phones" class="grid grid-flow-row grid-cols-3"></article>
+    </main>
+  </body>
+</html>
