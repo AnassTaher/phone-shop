@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin page</title>
-    <link rel="stylesheet" href="/index.css" />
+    <!-- <link rel="stylesheet" href="/index.css" /> -->
     <link rel="stylesheet" href="/tailwind.css" />
     <script type="module" src="admin.js" defer></script>
   </head>
@@ -22,37 +22,28 @@
     <main class="bg-content mt-12 p-12">
       <h1 class="pb-4 text-2xl">Add phone</h1>
       <h2>Required to fill in all inputs</h2>
-      <form id="post-form" class="grid gap-4 ">
-        <div>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" />
-      </div>
-
-      <div>
-        <label for="price">Price</label>
-        <input type="number" id="price" name="price" />
-      </div>
-      <div>
-        <label for="image">Image</label>
-        <input type="url" id="image" name="image" />
-      </div>
-      <div>
-        <label for="company">Company</label>
-        <input id="company" name="company"></input>
-      </div>
-
-      <div>
-        <label for="url">Url</label>
-        <input type="url" id="url" name="url" />
-      </div>
-
-      <div>
-        <button
-        id="admin-post"
-        class="bg-blue-500 hover:bg-hover p-4 text-white font-bold rounded"
-      >
-        Submit
-      </button>
+      <form id="post-form" class="grid gap-4 w-32">
+        <div class="flex flex-col">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name">
+        </div>
+        <div class="flex flex-col">
+          <label for="company">Company</label>
+          <input type="text" name="company" id="company">
+        </div>
+        <div class="flex flex-col">
+          <label for="price">Price</label>
+          <input type="number" name="price" id="price">
+        </div>
+        <div class="flex flex-col">
+          <label for="image">Image URL</label>
+          <input type="url" name="image" id="image">
+        </div>
+        <div class="flex flex-col">
+          <label for="url">Website URL</label>
+          <input type="url" name="url" id="url">
+        </div>
+        <button type="submit">Add</button>
       </div>
       </form>
     </main>

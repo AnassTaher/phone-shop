@@ -46,56 +46,10 @@ function createPhone(phone) {
   addImage.classList.add("add-phone")
   addImage.innerHTML = `
     <div>
-    <img src="https://img.icons8.com/?size=512&id=1501&format=png" alt="add phone" class="w-48" id="add-phone">
+    <a href="/admin/admin.html"><img src="https://img.icons8.com/?size=512&id=1501&format=png" alt="add phone" class="w-48" id="add-phone"></a>
     <h2 class="text-2xl">Add a new phone</h2>
     </div>
   `
   allPhones.appendChild(addImage)
-  const addPhoneButton = document.getElementById("add-phone")
-  addPhoneButton.addEventListener("click", addPhone)
-
 })();
-
-
-function addPhone(){
-  console.log("hello")
-  const addPhoneForm = document.createElement("form")
-  addPhoneForm.classList.add("add-phone-form")
-  addPhoneForm.innerHTML = `
-    <div class="flex flex-col">
-      <label for="name">Name</label>
-      <input type="text" name="name" id="name">
-    </div>
-    <div class="flex flex-col">
-      <label for="company">Company</label>
-      <input type="text" name="company" id="company">
-    </div>
-    <div class="flex flex-col">
-      <label for="price">Price</label>
-      <input type="number" name="price" id="price">
-    </div>
-    <div class="flex flex-col">
-      <label for="image">Image</label>
-      <input type="text" name="image" id="image">
-    </div>
-    <div class="flex flex-col">
-      <label for="url">URL</label>
-      <input type="text" name="url" id="url">
-    </div>
-    <button type="submit">Add</button>
-  `
-  allPhones.appendChild(addPhoneForm)
-
-  addPhoneForm.addEventListener("submit", async (e) => {
-    e.preventDefault()
-
-    const formData = new FormData(addPhoneForm)
-    const entry = Object.fromEntries(formData.entries())
-
-    await db.collection("phones").add(entry)
-    addPhoneForm.remove()
-    location.reload()
-  })
-
-};
 
